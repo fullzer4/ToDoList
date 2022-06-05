@@ -1,15 +1,10 @@
-import React, { Component} from 'react';
-import "./styles/reset.css";
-import "./styles/App.css";
+import { AuthGoogleProvider } from "./context/authGoogle"
+import { AppRoutes } from "./routes/routes"
 
-class App extends Component {
-    render() {
-        return(
-            <div id="pagina">
-                <h1>Sexo</h1>
-            </div>
-        )
-    }
+export const App = () => {
+  return (
+    <AuthGoogleProvider>
+      <AppRoutes/>
+    </AuthGoogleProvider>
+  )
 }
-
-export default App;
