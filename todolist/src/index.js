@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Singup from './Singup';
+import Rotas from './routes/routes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Singup />
+    <Rotas />
   </React.StrictMode>
 );
