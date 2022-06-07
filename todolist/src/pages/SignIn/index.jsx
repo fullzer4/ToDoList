@@ -17,10 +17,11 @@ export default function SignIn() {
         <form onSubmit={handleSubmit} id="campos">
           <input id="campos-inserir" type="text" placeholder="email@email.com" value={email} onChange={(e) => setEmail(e.target.value)}/>
           <input id="campos-inserir" type="password" placeholder="senha"  value={password} onChange={(e) => setPassword(e.target.value)}/>
-          <button type="submit">Acessar</button>
+          <div className="links">
+            <button type="submit" id="Acessar">Acessar</button>
+            <Link to="/register" id="Criar-conta">Criar uma conta</Link>
+          </div>
         </form>
-
-        <Link to="/register">criar uma conta</Link>
       </div>
     </div>
   );

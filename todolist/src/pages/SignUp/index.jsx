@@ -28,7 +28,7 @@ export default function SignUp() {
         <button type="submit">Acessar</button>
       </form>
 
-      <Link to="/register">criar uma conta</Link>
+      <Link to="/">Logar</Link>
     </div>
   );
 }
