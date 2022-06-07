@@ -1,0 +1,40 @@
+#root{
+    background: #F8B2D4;
+}
+.formulario{
+    width: calc(10rem + 25vw);
+    height: calc(20rem + 28vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1414146E;
+    border-radius: calc(20px + 2vw);
+    padding: calc(5px + 1vw);
+}
+
+#campos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+}
+
+#Titulo{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(1rem + 4vw);
+    color: #FFFFFF;
+}
+
+#campos-inserir{
+    width: 100%;
+    height: 15%;
+    border-radius: calc(5px + 1vw);
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #24222291;
+}

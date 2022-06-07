@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 *{
   margin: 0;
@@ -15,9 +14,20 @@ html, body, #root{
   height: 100%;
 }
 
+#pagina{
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 1980px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
 body{
   font: 14px 'Roboto', sans-serif;
-  background-color: #EFEFEF;
 }
 
 a{
@@ -30,4 +40,8 @@ ul{
 
 button{
  cursor: pointer; 
+}
+
+input{
+  border: none;
 }
