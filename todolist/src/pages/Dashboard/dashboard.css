@@ -9,6 +9,7 @@
     flex-direction: column;
     padding: calc(10px + 1vmin);
     gap: calc(40px + 10vh);
+    overflow: hidden;
   }
 
 .Header-dashboard{
@@ -32,6 +33,8 @@
     padding-bottom: calc(2px + 1vh);
     border-radius: calc(2px + 1vw);
     background-color: rgba(28, 26, 26, 0.26);
+    animation: fadeInDown;
+    animation-duration: 0.6s;
 }
 
 #user-header{
@@ -49,6 +52,8 @@
     background-color: rgba(28, 26, 26, 0.26);
     display: flex;
     align-items: center;
+    animation: fadeInDown;
+    animation-duration: 0.6s;
 }
 
 #logout{
@@ -61,6 +66,8 @@
   font-weight: 400;
   color: #D9D9D9;
   font-size: calc(0.35rem + 1vw);
+  animation: fadeInDown;
+  animation-duration: 0.6s;
 }
 
 #form-tarefas{
@@ -74,6 +81,8 @@
   border-radius: calc(20px + 2vw);
   padding: calc(5px + 1vw);
   backdrop-filter: blur;
+  animation: fadeIn;
+  animation-duration: 0.6s;
 }
 
 .container-inputs{

@@ -3,6 +3,7 @@
     background-size: 400% 400%;
     position: relative;
     animation: animate 7.5s ease-in-out infinite;
+    overflow: hidden;
 }
 
 @keyframes animate{
@@ -17,6 +18,7 @@
     }
   }
 
+
 .formulario-signin{
     width: calc(10rem + 23vw);
     height: calc(20rem + 28vh);
@@ -28,6 +30,8 @@
     border-radius: calc(20px + 2vw);
     padding: calc(5px + 1vw);
     backdrop-filter: blur;
+    animation: fadeInUp;
+    animation-duration: 0.6s;
 }
 
 #campos-signin{
