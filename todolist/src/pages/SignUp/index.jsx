@@ -19,16 +19,19 @@ export default function SignUp() {
   }
 
   return (
-    <div>
-
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Nome" value={nome} onChange={(e) => setNome(e.target.value)}/>
-        <input type="text" placeholder="email@email.com" value={email} onChange={(e) => setEmail(e.target.value)}/>
-        <input type="password" placeholder="senha"  value={password} onChange={(e) => setPassword(e.target.value)}/>
-        <button type="submit">Acessar</button>
-      </form>
-
-      <Link to="/">Logar</Link>
+    <div id="pagina">
+      <div className="formulario-signup">
+        <h1 id="Titulo-signup">Sign up</h1>
+        <form onSubmit={handleSubmit} id="campos-signup">
+          <input type="text" id="campos-inserir-signup-1" placeholder="Nome" value={nome} onChange={(e) => setNome(e.target.value)}/>
+          <input type="email" id="campos-inserir-signup-2" placeholder="email@email.com" value={email} onChange={(e) => setEmail(e.target.value)}/>
+          <input type="password" id="campos-inserir-signup-3" placeholder="senha"  value={password} onChange={(e) => setPassword(e.target.value)}/>
+          <div className="links-signup">
+            <button type="submit" id="criar-signup">Criar Conta</button>
+            <Link to="/" id="logar-signup">Logar</Link>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

@@ -1,15 +1,15 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
-import "firebase/compat/firestore"
+import 'firebase/compat/firestore';
 
 let firebaseConfig = {
-  apiKey: "AIzaSyDXLo_6qqEjraijp3tQOaICIU5AUbPLO-o",
-  authDomain: "sistema-291e4.firebaseapp.com",
-  projectId: "sistema-291e4",
-  storageBucket: "sistema-291e4.appspot.com",
-  messagingSenderId: "695102058017",
-  appId: "1:695102058017:web:ba429da5e81d06297e3d60",
-  measurementId: "G-KNZBKV3ZDL"
+  apiKey: "AIzaSyDsdj1DtDOJ0baEAJXJAZsM3b61zA_L-Aw",
+  authDomain: "todolist-yfullzer4.firebaseapp.com",
+  projectId: "todolist-yfullzer4",
+  storageBucket: "todolist-yfullzer4.appspot.com",
+  messagingSenderId: "445827475165",
+  appId: "1:445827475165:web:a0c6254eb16d4d6fa55d34",
+  measurementId: "G-X10QJYRWP4"
 };
 
 if(!firebase.apps.length){

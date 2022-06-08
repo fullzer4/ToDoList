@@ -1,0 +1,109 @@
+
+.formulario-signup{
+    width: calc(10rem + 23vw);
+    height: calc(20rem + 28vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1414146E;
+    border-radius: calc(20px + 2vw);
+    padding: calc(5px + 1vw);
+    backdrop-filter: blur;
+}
+
+#campos-signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+}
+
+#Titulo-signup{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(1rem + 4vw);
+    color: #FFFFFF;
+}
+
+#campos-inserir-signup-1{
+    width: 90%;
+    height: 15%;
+    border-radius: calc(5px + 1vw);
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(28, 26, 26, 0.26);
+    color: #D9D9D9;
+    font-size: calc(0.5rem + 1vw);
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+}
+#campos-inserir-signup-2{
+    width: 90%;
+    height: 15%;
+    border-radius: calc(5px + 1vw);
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(28, 26, 26, 0.26);
+    color: #D9D9D9;
+    font-size: calc(0.5rem + 1vw);
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+}
+#campos-inserir-signup-3{
+    width: 90%;
+    height: 15%;
+    border-radius: calc(5px + 1vw);
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(28, 26, 26, 0.26);
+    color: #D9D9D9;
+    font-size: calc(0.5rem + 1vw);
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+}
+
+#campos-inserir-signup-1::placeholder{
+    color: #aaaaaa;
+}
+#campos-inserir-signup-2::placeholder{
+    color: #aaaaaa;
+}
+#campos-inserir-signup-3::placeholder{
+    color: #aaaaaa;
+}
+
+.links-signup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+}
+
+#criar-signup{
+    width: calc(4rem + 5vw);
+    height: calc(2rem + 2vh);
+    background-color: rgba(28, 26, 26, 0.26);
+    border-radius: calc(2px + 1vw);
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    color: #D9D9D9;
+    font-size: calc(0.35rem + 1vw);
+}
+
+#logar-signup{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    color: #D9D9D9;
+    font-size: calc(0.5rem + 1vw);
+    text-decoration: underline;
+}

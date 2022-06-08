@@ -1,7 +1,23 @@
 #root{
-    background: #F8B2D4;
+    background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
+    background-size: 400% 400%;
+    position: relative;
+    animation: animate 7.5s ease-in-out infinite;
 }
-.formulario{
+
+@keyframes animate{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+.formulario-signin{
     width: calc(10rem + 23vw);
     height: calc(20rem + 28vh);
     display: flex;
@@ -11,9 +27,10 @@
     background-color: #1414146E;
     border-radius: calc(20px + 2vw);
     padding: calc(5px + 1vw);
+    backdrop-filter: blur;
 }
 
-#campos{
+#campos-signin{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +39,7 @@
     height: 80%;
 }
 
-#Titulo{
+#Titulo-signin{
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
@@ -30,7 +47,7 @@
     color: #FFFFFF;
 }
 
-#campos-inserir{
+#campos-inserir-signin-1{
     width: 90%;
     height: 15%;
     border-radius: calc(5px + 1vw);
@@ -44,11 +61,28 @@
     font-weight: 300;
 }
 
-#campos-inserir::placeholder{
+#campos-inserir-signin-2{
+    width: 90%;
+    height: 15%;
+    border-radius: calc(5px + 1vw);
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(28, 26, 26, 0.26);
+    color: #D9D9D9;
+    font-size: calc(0.5rem + 1vw);
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+}
+
+#campos-inserir-signin-1::placeholder{
+    color: #aaaaaa;
+}
+#campos-inserir-signin-2::placeholder{
     color: #aaaaaa;
 }
 
-.links{
+.links-signin{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -56,7 +90,7 @@
     width: 90%;
 }
 
-#Acessar{
+#Acessar-signin{
     width: calc(4rem + 4vw);
     height: calc(2rem + 2vh);
     background-color: rgba(28, 26, 26, 0.26);
@@ -68,7 +102,7 @@
     font-size: calc(0.35rem + 1vw);
 }
 
-#Criar-conta{
+#Criar-conta-signin{
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
