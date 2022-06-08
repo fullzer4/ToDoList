@@ -27,27 +27,27 @@ export default function Dashboard(){
         <h2 id="user-header">{user.nome}</h2>
       </div>
       <form onSubmit={handlecreate} id="form-tarefas">
-        <div className="teste">
-          <div className="testes">
+        <div className="container-inputs">
+          <div className="labels">
             <label>Titulo</label>
             <label>Tarefa</label>
           </div>
-          <div className="testes">
-            <input type="text" value={titulo} onChange={(e)=> setTitulo(e.target.value)}></input>
-            <input type="text" value={tarefa} onChange={(e)=> setTarefa(e.target.value)}></input>
+          <div className="inputs-c">
+            <input type="text" className="input-texto" value={titulo} onChange={(e)=> setTitulo(e.target.value)}></input>
+            <input type="text" className="input-texto" value={tarefa} onChange={(e)=> setTarefa(e.target.value)}></input>
           </div>
         </div>
-        <div className="teste">
-          <div className="testes">
+        <div className="container-inputs">
+          <div className="labels">
             <label>Hora</label>
             <label>Dia</label>
           </div>
-          <div className="testes">
-            <input type="time" value={hora} onChange={(e)=> setHora(e.target.value)}></input>
-            <input type="date" value={dia} onChange={(e)=> setDia(e.target.value)}></input>
+          <div className="inputs-c">
+            <input type="time" value={hora} id="input-hora" onChange={(e)=> setHora(e.target.value)}></input>
+            <input type="date" value={dia} id="input-dia" onChange={(e)=> setDia(e.target.value)}></input>
           </div>
         </div>
-        <button type="submit">Criar Tarefa</button>
+        <button type="submit" id="submit-tarefa">Criar Tarefa</button>
       </form>
       <div>
         <h3>Tarefas:</h3>
