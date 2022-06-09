@@ -31,33 +31,7 @@
     color: #FFFFFF;
 }
 
-#campos-inserir-signup-1{
-    width: 90%;
-    height: 15%;
-    border-radius: calc(5px + 1vw);
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: rgba(28, 26, 26, 0.26);
-    color: #D9D9D9;
-    font-size: calc(0.5rem + 1vw);
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 300;
-}
-#campos-inserir-signup-2{
-    width: 90%;
-    height: 15%;
-    border-radius: calc(5px + 1vw);
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: rgba(28, 26, 26, 0.26);
-    color: #D9D9D9;
-    font-size: calc(0.5rem + 1vw);
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 300;
-}
-#campos-inserir-signup-3{
+#campos-inserir-signup{
     width: 90%;
     height: 15%;
     border-radius: calc(5px + 1vw);
@@ -71,13 +45,7 @@
     font-weight: 300;
 }
 
-#campos-inserir-signup-1::placeholder{
-    color: #aaaaaa;
-}
-#campos-inserir-signup-2::placeholder{
-    color: #aaaaaa;
-}
-#campos-inserir-signup-3::placeholder{
+#campos-inserir-signup::placeholder{
     color: #aaaaaa;
 }
 
@@ -111,3 +79,37 @@
 }
 
 /* a partir de 500 px*/
+
+@media screen and (max-width: 500px){
+    #logar-signup{
+        font-size: calc(0.65rem + 1.5vw);
+    }
+
+    #criar-signup{
+        width: calc(4rem + 10vw);
+        height: calc(2rem + 2vh);
+        border-radius: calc(5px + 2.5vw);
+        font-size: calc(0.65rem + 1.5vw);
+    }
+    .links-signup{
+        width: 90%;
+    }
+    #campos-inserir-signup{
+        width: 90%;
+        height: 20%;
+        border-radius: calc(5px + 3.5vw);
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: calc(0.65rem + 2vw);
+    }
+    .formulario-signup{
+        width: calc(10rem + 35vw);
+        height: calc(20rem + 20vh);
+        border-radius: calc(20px + 2vw);
+        padding: calc(5px + 1vw);
+    }
+    
+    #Titulo-signup{
+        font-size: calc(1rem + 10vw);
+    }
+}

@@ -51,7 +51,7 @@
     color: #FFFFFF;
 }
 
-#campos-inserir-signin-1{
+#campos-inserir-signin{
     width: 90%;
     height: 15%;
     border-radius: calc(5px + 1vw);
@@ -65,24 +65,7 @@
     font-weight: 300;
 }
 
-#campos-inserir-signin-2{
-    width: 90%;
-    height: 15%;
-    border-radius: calc(5px + 1vw);
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: rgba(28, 26, 26, 0.26);
-    color: #D9D9D9;
-    font-size: calc(0.5rem + 1vw);
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 300;
-}
-
-#campos-inserir-signin-1::placeholder{
-    color: #aaaaaa;
-}
-#campos-inserir-signin-2::placeholder{
+#campos-inserir-signin::placeholder{
     color: #aaaaaa;
 }
 
@@ -116,3 +99,37 @@
 }
 
 /* a partir de 500 px*/
+
+@media screen and (max-width: 500px){
+    #Criar-conta-signin{
+        font-size: calc(0.65rem + 1.5vw);
+    }
+
+    #Acessar-signin{
+        width: calc(4rem + 8vw);
+        height: calc(2rem + 2vh);
+        border-radius: calc(5px + 2.5vw);
+        font-size: calc(0.65rem + 1.5vw);
+    }
+    .links-signin{
+        width: 90%;
+    }
+    #campos-inserir-signin{
+        width: 90%;
+        height: 20%;
+        border-radius: calc(5px + 3.5vw);
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: calc(0.65rem + 2vw);
+    }
+    .formulario-signin{
+        width: calc(10rem + 35vw);
+        height: calc(20rem + 18vh);
+        border-radius: calc(20px + 2vw);
+        padding: calc(5px + 1vw);
+    }
+    
+    #Titulo-signin{
+        font-size: calc(1rem + 10vw);
+    }
+}

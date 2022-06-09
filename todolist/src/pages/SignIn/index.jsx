@@ -20,13 +20,13 @@ export default function SignIn() {
   return (
     <div id="pagina">
       <div className="formulario-signin">
-        <h1 id="Titulo-signin">Sign in</h1>
+        <h1 id="Titulo-signin">Login</h1>
         <form onSubmit={handleSubmit} id="campos-signin">
-          <input id="campos-inserir-signin-1" type="email" placeholder="email@email.com" value={email} onChange={(e) => setEmail(e.target.value)}/>
-          <input id="campos-inserir-signin-2" type="password" placeholder="senha"  value={password} onChange={(e) => setPassword(e.target.value)}/>
+          <input id="campos-inserir-signin" type="email" placeholder="email@email.com" value={email} onChange={(e) => setEmail(e.target.value)}/>
+          <input id="campos-inserir-signin" type="password" placeholder="password"  value={password} onChange={(e) => setPassword(e.target.value)}/>
           <div className="links-signin">
-            <button type="submit" id="Acessar-signin">{loadingAuth ? 'Carregando...' : 'Acessar'}</button>
-            <Link to="/register" id="Criar-conta-signin">Criar uma conta</Link>
+            <button type="submit" id="Acessar-signin">{loadingAuth ? 'loading...' : 'Access'}</button>
+            <Link to="/register" id="Criar-conta-signin">Create acount</Link>
           </div>
         </form>
       </div>

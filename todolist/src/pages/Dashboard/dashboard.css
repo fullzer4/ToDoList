@@ -7,9 +7,9 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: calc(10px + 1vmin);
     gap: calc(40px + 10vh);
     overflow: hidden;
+    padding: 15px;
   }
 
 .Header-dashboard{
@@ -27,56 +27,56 @@
     font-weight: 400;
     font-size: calc(1rem + 3vw);
     color: #D9D9D9;
-    padding-left: calc(10px + 1vw);
-    padding-right: calc(10px + 1vw);
-    padding-top: calc(2px + 0.25vh);
-    padding-bottom: calc(2px + 1vh);
     border-radius: calc(2px + 1vw);
-    background-color: rgba(28, 26, 26, 0.26);
     animation: fadeInDown;
     animation-duration: 0.6s;
 }
 
 #user-header{
     font-family: 'Ubuntu';
-    font-style: normal;
+  font-style: normal;
     font-weight: 400;
     font-size: calc(0.75rem + 1vw);
     color: #D9D9D9;
-    text-decoration: underline;
-    padding-left: calc(10px + 1vw);
-    padding-right: calc(10px + 1vw);
-    padding-top: calc(2px + 0.5vh);
-    padding-bottom: calc(2px + 1vh);
     border-radius: calc(2px + 1vw);
-    background-color: rgba(28, 26, 26, 0.26);
     display: flex;
     align-items: center;
     animation: fadeInDown;
     animation-duration: 0.6s;
+    background: #1414146E;
+  padding-left: calc(10px + 1vw);
+  padding-right: calc(10px + 1vw);
+  padding-top: calc(2px + 0.25vh); 
+  padding-bottom: calc(2px + 0.5vh);
 }
 
 #logout{
-  width: calc(4rem + 5vw);
-  height: calc(2rem + 2vh);
-  background-color: rgba(28, 26, 26, 0.26);
+  background-color: transparent;
   border-radius: calc(2px + 1vw);
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
   color: #D9D9D9;
-  font-size: calc(0.35rem + 1vw);
+  font-size: calc(0.75rem + 1vw);
   animation: fadeInDown;
   animation-duration: 0.6s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1414146E;
+  padding-left: calc(10px + 1vw);
+  padding-right: calc(10px + 1vw);
+  padding-top: calc(2px + 0.25vh); 
+  padding-bottom: calc(2px + 0.5vh);
 }
 
 #form-tarefas{
-  width: calc(10rem + 18vw);
-  height: calc(10rem + 8vh);
+  width: calc(10rem + 25vw);
+  height: calc(10rem + 15vh);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   background-color: #1414146E;
   border-radius: calc(20px + 2vw);
   padding: calc(5px + 1vw);
@@ -114,7 +114,7 @@
 .labels label{
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   color: #D9D9D9;
   font-size: calc(0.75rem + 1vw);
 }
@@ -178,5 +178,30 @@
   color: #D9D9D9;
   font-size: calc(0.35rem + 0.8vw);
   margin-top: 10px;
+}
+
+.container-tarefas{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#tarefas{
+  font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.8rem + 2vw);
+    color: #D9D9D9;
+    padding-left: calc(10px + 1vw);
+    padding-right: calc(10px + 1vw);
+    padding-top: calc(2px + 0.25vh);
+    padding-bottom: calc(2px + 1vh);
+    border-radius: calc(2px + 1vw);
+    background-color: rgba(28, 26, 26, 0.26);
+    animation: fadeIn;
+    animation-duration: 0.6s;
+    margin: auto;
 }
 /* a partir de 500 px*/
