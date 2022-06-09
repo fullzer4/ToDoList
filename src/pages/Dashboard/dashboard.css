@@ -298,4 +298,94 @@
   justify-content: center;
   margin-top: 5px;
 }
+
 /* a partir de 500 px*/
+
+@media screen and (max-width: 500px){
+
+.labels label{
+  font-size: calc(0.75rem + 2vw);
+}
+
+.input-texto{
+  border-radius: calc(5px + 1vw);
+  font-size: calc(0.6rem + 1vw);
+  width: 100%;
+  height: 40%;
+}
+
+#input-hora{
+  border-radius: calc(5px + 1vw);
+  font-size: calc(0.6rem + 1vw);
+  width: 75%;
+  height: 40%;
+}
+
+#input-dia{
+  border-radius: calc(5px + 1vw);
+  font-size: calc(0.4rem + 1vw);
+  width: 75%;
+  height: 40%;
+}
+
+#submit-tarefa{
+  width: calc(4rem + 6vw);
+  height: calc(1.5rem + 1vh);
+  border-radius: calc(2px + 3vw);
+  font-size: calc(0.5rem + 0.8vw);
+  margin-top: 10px;
+  height: 20%;
+}
+
+#tarefas{
+  font-size: calc(0.8rem + 2vw);
+  padding-left: calc(10px + 1vw);
+  padding-right: calc(10px + 1vw);
+  padding-top: calc(2px + 0.25vh);
+  padding-bottom: calc(2px + 1vh);
+  border-radius: calc(2px + 1vw);
+}
+
+#tarefas-box{
+  margin-top: calc(15px + 1vh);
+  gap: calc(2rem + 2vh);
+}
+
+.box-tarefa{
+  padding-left: calc(10px + 1vw);
+  padding-right: calc(10px + 1vw);
+  padding-top: calc(2px + 0.25vh);
+  padding-bottom: calc(2px + 1vh);
+  border-radius: calc(2px + 1vw);
+  width: calc(10rem + 25vw);
+}
+
+#tarefa-titulo{
+  font-size: calc(0.75rem + 2vw);
+}
+
+.divisor{
+  border-radius: calc(2px + 1vw);
+}
+
+#tarefa-tarefa{
+  font-size: calc(0.3rem + 2vw);
+}
+
+#times{
+  width: 80%;
+}
+
+#tarefa-hora{
+  font-size: calc(0.25rem + 1.8vw);
+}
+
+#tarefa-dia{
+  font-size: calc(0.25rem + 1.8vw);
+}
+
+#tarefa-excluir{
+  border-radius: calc(2px + 1vw);
+  font-size: calc(0.75rem + 1vw);
+}
+}
