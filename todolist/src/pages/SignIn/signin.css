@@ -3,7 +3,7 @@
     background-size: 400% 400%;
     position: relative;
     animation: animate 7.5s ease-in-out infinite;
-    overflow: hidden;
+    overflow: auto;
 }
 
 @keyframes animate{
@@ -18,6 +18,9 @@
     }
   }
 
+#pagina{
+    overflow: hidden;
+}
 
 .formulario-signin{
     width: calc(10rem + 23vw);

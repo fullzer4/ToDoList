@@ -8,8 +8,8 @@
     justify-content: space-between;
     flex-direction: column;
     gap: calc(40px + 10vh);
-    overflow: hidden;
     padding: 15px;
+    overflow: auto;
   }
 
 .Header-dashboard{
@@ -116,7 +116,7 @@
   font-style: normal;
   font-weight: 400;
   color: #D9D9D9;
-  font-size: calc(0.75rem + 1vw);
+  font-size: calc(0.75rem + 2vw);
 }
 
 .input-texto{
@@ -133,6 +133,7 @@
   font-weight: 300;
   display: flex;
   width: 100%;
+  height: 40%;
 }
 
 #input-hora{
@@ -149,6 +150,7 @@
   font-weight: 300;
   display: flex;
   width: 75%;
+  height: 40%;
 }
 
 #input-dia{
@@ -165,6 +167,7 @@
   font-weight: 300;
   display: flex;
   width: 75%;
+  height: 40%;
 }
 
 #submit-tarefa{
@@ -178,6 +181,7 @@
   color: #D9D9D9;
   font-size: calc(0.35rem + 0.8vw);
   margin-top: 10px;
+  height: 20%;
 }
 
 .container-tarefas{
@@ -190,18 +194,108 @@
 
 #tarefas{
   font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(0.8rem + 2vw);
-    color: #D9D9D9;
-    padding-left: calc(10px + 1vw);
-    padding-right: calc(10px + 1vw);
-    padding-top: calc(2px + 0.25vh);
-    padding-bottom: calc(2px + 1vh);
-    border-radius: calc(2px + 1vw);
-    background-color: rgba(28, 26, 26, 0.26);
-    animation: fadeIn;
-    animation-duration: 0.6s;
-    margin: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(0.8rem + 2vw);
+  color: #D9D9D9;
+  padding-left: calc(10px + 1vw);
+  padding-right: calc(10px + 1vw);
+  padding-top: calc(2px + 0.25vh);
+  padding-bottom: calc(2px + 1vh);
+  border-radius: calc(2px + 1vw);
+  background-color: rgba(28, 26, 26, 0.26);
+  animation: fadeIn;
+  animation-duration: 0.6s;
+  margin: auto;
+}
+
+#tarefas-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(15px + 1vh);
+  gap: calc(2rem + 2vh);
+}
+
+.box-tarefa{
+  background-color: rgba(28, 26, 26, 0.26);
+  display: flex;
+  flex-direction: column;
+  padding-left: calc(10px + 1vw);
+  padding-right: calc(10px + 1vw);
+  padding-top: calc(2px + 0.25vh);
+  padding-bottom: calc(2px + 1vh);
+  border-radius: calc(2px + 1vw);
+  width: calc(10rem + 25vw);
+  margin: auto;
+  align-items: center;
+  animation: fadeInDown;
+}
+
+#tarefa-titulo{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  color: #D9D9D9;
+  font-size: calc(0.5rem + 2vw);
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divisor{
+  width: 90%;
+  height: 2px;
+  background-color: #d9d9d969;
+  border-radius: calc(2px + 1vw);
+}
+
+#tarefa-tarefa{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  color: #D9D9D9;
+  font-size: calc(0.1rem + 2vw);
+}
+
+#times{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#tarefa-hora{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  color: #D9D9D9;
+  font-size: calc(0.25rem + 1.8vw);
+}
+
+#tarefa-dia{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  color: #D9D9D9;
+  font-size: calc(0.25rem + 1.8vw);
+}
+
+#tarefa-excluir{
+  background-color: transparent;
+  border-radius: calc(2px + 1vw);
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  color: #D9D9D9;
+  font-size: calc(0.75rem + 1vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
 }
 /* a partir de 500 px*/

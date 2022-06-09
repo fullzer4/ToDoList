@@ -10,6 +10,8 @@ export default function Dashboard(){
   const [hora, setHora] = useState("")
   const [dia, setDia] = useState("")
   const [tarefas, setTarefas] = useState([])
+  const [loadingEx, setLoadingEx] = useState(false)
+  const [loadingCr, setLoadingCr] = useState(false)
 
 
   const { signOut , user} = useContext(AuthContext)
@@ -38,6 +40,7 @@ export default function Dashboard(){
   async function handlecreate(e){
     e.preventDefault()
     if(dia !== "" && hora !=="" && tarefa !=="" && titulo !==""){
+      setLoadingCr(true)
       await firebase.firestore().collection("users").doc(user.uid).collection("tarefas")
       .add({
         titulo: titulo,
@@ -51,24 +54,30 @@ export default function Dashboard(){
         setHora("")
         setDia("")
         toast.info("Criado com sucesso")
+        setLoadingCr(false)
       })
       .catch((error)=>{
         console.log(error);
         toast.error("Verifique os campos")
+        setLoadingCr(false)
       })
     }else{
       toast.error("Verifique os campos")
+      setLoadingCr(false)
     }
   }
     
   async function excluir(id){
+    setLoadingEx(true)
     await firebase.firestore().collection("users").doc(user.uid).collection("tarefas").doc(id)
     .delete()
     .then(()=>{
       toast.info("Deletado com sucesso")
+      setLoadingEx(false)
     })
     .catch((error)=>{
       console.log(error);
+      setLoadingEx(false)
     })
   }
 
@@ -99,25 +108,27 @@ export default function Dashboard(){
             <input type="date" value={dia} id="input-dia" onChange={(e)=> setDia(e.target.value)}></input>
           </div>
         </div>
-        <button type="submit" id="submit-tarefa">Create Task</button>
+        <button type="submit" id="submit-tarefa">{loadingCr ? "loading..." : "Create Task"}</button>
       </form>
       <div className="container-tarefas">
         <h3 id="tarefas">Your Tasks:</h3>
-        <div>
-          <ul>
-            {tarefas.map((itens)=>{
-              return(
-                <li key={itens.id}>
-                  <span>{itens.titulo}</span>
-                  <span>{itens.tarefa}</span>
-                  <span>{itens.hora}</span>
-                  <span>{itens.dia}</span>
-                  <button onClick={()=> excluir(itens.id)}>Finalizar</button>
+        <ul id="tarefas-box">
+          {tarefas.map((itens)=>{
+            return(
+              <li key={itens.id} className="box-tarefa">
+                  <span id="tarefa-titulo">{itens.titulo}</span>
+                  <div className="divisor"></div>
+                  <span id="tarefa-tarefa">{itens.tarefa}</span>
+                  <div id="times">
+                    <span id="tarefa-hora">{itens.hora}</span>
+                    <span id="tarefa-dia">{itens.dia}</span>
+                  </div>
+                  <div className="divisor"></div>
+                  <button id="tarefa-excluir" onClick={()=> excluir(itens.id)}>{loadingEx ? "loading..." : "remove"}</button>
                 </li>
               )
             })}
           </ul>
-        </div>
       </div>
     </div>
   )
